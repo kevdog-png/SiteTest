@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="✨ Shiny Raid Seed Searcher">
+    <meta property="og:description" content="Filter and search for shiny raid seeds by species, tera type, region, and star level for Pokémon Scarlet. Copy and paste raid commands into the #private-raids channel in Oceanside Pokémon. Made by Kevdog.">
+    <meta property="og:image" content="https://kevdog-png.github.io/RaidSeedFinder/thumbnail.png">
+    <meta property="og:url" content="https://kevdog-png.github.io/RaidSeedFinder/">
+    <meta property="og:type" content="website">
+    <title>Shiny Raid Seeds - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        #discord-bar {
+            display: block;
+            background-color: #5865F2;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        #discord-bar:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            margin-top: 50px;
+        }
+
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .column h2 {
+            color: #f9f9f9;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .column ul li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .column ul li:before {
+            content: "\2022"; /* Bullet point */
+            color: #5865F2; /* Discord blue */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .column a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .column a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="discord-bar">
+        <a href="https://discord.gg/plza" target="_blank">Join our Discord server!</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Shiny Raid Seeds</h1>
+        <p>Explore shiny raid seeds and connect with our community on Discord!</p>
+
+        <div class="columns">
+            <div class="column">
+                <h2>About Our Discord Server</h2>
+                <ul>
+                    <li>Connect with fellow Pokémon trainers.</li>
+                    <li>Participate in exclusive shiny raids.</li>
+                    <li>Access private raid channels.</li>
+                    <li>Share tips and strategies.</li>
+                    <li>24/7 active moderators.</li>
+                </ul>
+                <p><a href="https://discord.gg/plza" target="_blank">Join Now</a> and start your shiny adventure!</p>
+            </div>
+
+            <div class="column">
+                <h2>Shiny Raid Seeds</h2>
+                <p>Looking for specific shiny raid seeds? Check out our <a href="raids.html">Raids Page</a> to:</p>
+                <ul>
+                    <li>Search for shiny raid seeds by species, region, and tera type.</li>
+                    <li>Find seeds with rare rewards like Herba Mystica.</li>
+                    <li>Copy raid commands directly to use in-game.</li>
+                </ul>
+                <p>Don’t miss out on the best raid seeds. <a href="raids.html">Explore Raids Now</a>!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
