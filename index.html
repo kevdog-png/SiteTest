@@ -17,11 +17,11 @@
             background-color: #1c1c1c;
             color: #f0f0f0;
             margin: 0;
-            padding: 0;
+            padding: 70px 0 50px 0; /* Adjusted padding for better spacing */
         }
 
+        /* Discord bar styling */
         #discord-bar {
-            display: block;
             background-color: #5865F2;
             color: white;
             text-align: center;
@@ -32,38 +32,58 @@
             top: 0;
             width: 100%;
             z-index: 1000;
+        }
+
+        #discord-bar a {
+            color: white;
             text-decoration: none;
         }
 
-        #discord-bar:hover {
+        #discord-bar a:hover {
             text-decoration: underline;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 60px 20px;
-            margin-top: 50px;
-        }
-
-        /* Adjusted header image positioning */
+        /* Header image styling */
         #header-image {
             display: block;
-            margin: 20px auto 40px auto; /* Adjusting the top margin */
+            margin: 20px auto 40px auto; /* Adjusted for better spacing */
             max-width: 100%;
             height: auto;
         }
 
+        /* Main container for text and columns */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Title and subheading styling */
+        h1 {
+            text-align: center;
+            color: #f9f9f9;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #ddd;
+            font-size: 1rem;
+        }
+
+        /* Flex container for columns */
         .columns {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            justify-content: space-between;
+            justify-content: center;
             max-width: 1200px;
             width: 100%;
         }
 
+        /* Individual column styling */
         .column {
             flex: 1;
             min-width: 300px;
@@ -97,6 +117,7 @@
             margin-left: -1em;
         }
 
+        /* Link styling */
         .column a {
             color: #4CAF50;
             text-decoration: none;
@@ -105,6 +126,27 @@
         .column a:hover {
             text-decoration: underline;
         }
+
+        /* Explore Raids button styling */
+        #explore-raids-btn {
+            background-color: #5865F2;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #explore-raids-btn:hover {
+            background-color: #4752c4;
+        }
+
+        #explore-raids-btn:active {
+            background-color: #3c47a1;
+        }
     </style>
 </head>
 <body>
@@ -112,7 +154,6 @@
         <a href="https://discord.gg/plza" target="_blank">Join our Discord server!</a>
     </div>
 
-    <!-- Adjusted image below the header bar -->
     <img id="header-image" src="https://i.imgur.com/EZbXKmd.png" alt="Server Icon">
 
     <div class="container">
@@ -134,7 +175,7 @@
 
             <div class="column">
                 <h2>Shiny Raid Seeds</h2>
-                <p>Looking for specific shiny raid seeds? Check out our <a href="raids.html">Raids Page</a> to:</p>
+                <p>Looking for specific shiny raid seeds? Check out our <a href=https://kevdog-png.github.io/RaidSeedFinder/">raid seeds page</a> to:</p>
                 <ul>
                     <li>Search for shiny raid seeds by species, region, and tera type.</li>
                     <li>Find seeds with rare rewards like Herba Mystica.</li>
